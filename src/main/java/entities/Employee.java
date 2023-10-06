@@ -10,7 +10,7 @@ public class Employee {
 
     @Id
     @Column(name="id_employee",nullable = false)
-    private int id;
+    private int id2;
 
     @Column(name="first_name",nullable = false,length = 45)
     private String firstName;
@@ -19,13 +19,13 @@ public class Employee {
     private String lastName;
 
     @Column(name="email",nullable = false,length = 45)
-    private String email;
+    private String email2;
 
     @Column(name="phone_number",nullable = false,length = 45)
-    private String phoneNumber;
+    private String phoneNumber2;
 
     @Column(name="address",length = 45)
-    private String address;
+    private String address2;
 
     @Column(name="salary",nullable = false)
     private double salary;
@@ -42,12 +42,12 @@ public class Employee {
     }
 
     public Employee(int id, String firstName, String lastName, String email, String phoneNumber, String address, double salary, Date birthDate, int idCompany ){
-        this.id = id;
+        this.id2 = id;
         this.firstName = firstName;
         this.lastName = lastName;
-        this.email = email;
-        this.phoneNumber = phoneNumber;
-        this.address = address;
+        this.email2 = email;
+        this.phoneNumber2 = phoneNumber;
+        this.address2 = address;
         this.salary = salary;
         this.birthDate = birthDate;
         this.idCompany = idCompany;
@@ -57,11 +57,11 @@ public class Employee {
 
     // For id
     public int getId() {
-        return id;
+        return id2;
     }
 
     public void setId(int id) {
-        this.id = id;
+        this.id2 = id;
     }
 
     // For first name
@@ -84,29 +84,29 @@ public class Employee {
 
     // For email
     public String getEmail() {
-        return email;
+        return email2;
     }
 
     public void setEmail(String email) {
-        this.email = email;
+        this.email2 = email;
     }
 
     // For phone number
     public String getPhoneNumber() {
-        return phoneNumber;
+        return phoneNumber2;
     }
 
     public void setPhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
+        this.phoneNumber2 = phoneNumber;
     }
 
     // For address
     public String getAddress() {
-        return address;
+        return address2;
     }
 
     public void setAddress(String address) {
-        this.address = address;
+        this.address2 = address;
     }
 
     // For salary
