@@ -31,13 +31,13 @@ public class CompanyTest {
     @Description("Inserting a new company")
     public void insertNewCompany() {
         int id = 6;
-        String coName = "Carulla";
+        String name = "PriceSmart";
         String email = "carulla@carulla.com";
         String address = "Carrera 10 #20-30";
         String phone = "987654321";
 
-        Company company = new Company(id, coName, email, address, phone);
-        System.out.println("Company Id: "+company.getId());
+        Company company = new Company(id, name, email, address, phone);
+        System.out.println("Company Id: " + company.getId());
         System.out.println("Company name: " + company.getName());
         System.out.println("Company email: " + company.getEmail());
         System.out.println("Company phone: " + company.getPhoneNumber());

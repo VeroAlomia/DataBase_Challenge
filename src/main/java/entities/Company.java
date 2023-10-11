@@ -10,7 +10,7 @@ public class Company {
     @Column(name = "idCompany", nullable = false)
     private int id;
 
-    @Column(name = "coName", nullable = false, length = 45)
+    @Column(name = "name", nullable = false, length = 45)
     private String name;
 
     @Column(name = "phoneNumber", nullable = false, length = 45)
