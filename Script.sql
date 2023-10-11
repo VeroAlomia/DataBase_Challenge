@@ -5,7 +5,7 @@ USE PERSONASS;
 -- Create Company Table
 CREATE TABLE IF NOT EXISTS Company (
                                        idCompany INT PRIMARY KEY,
-                                       coName VARCHAR(45) NOT NULL,
+                                       name VARCHAR(45) NOT NULL,
     phoneNumber VARCHAR(45) NOT NULL,
     email VARCHAR(45) NOT NULL,
     address VARCHAR(45)
@@ -46,7 +46,7 @@ CREATE TABLE IF NOT EXISTS Institution (
     );
 
 -- Insert Data
-INSERT INTO Company (idCompany, coName, phoneNumber, email, address)
+INSERT INTO Company (idCompany, `name`, phoneNumber, email, address)
 VALUES
     ('1', 'Carulla', '54136579', 'carulla@gmail.com', 'Carrera 72 #45-67'),
     ('2', 'Jumbo', '54335486', 'jumbo@gmail.com', 'Calle 81 #23-45'),
