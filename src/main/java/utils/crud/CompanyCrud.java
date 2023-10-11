@@ -103,4 +103,7 @@ public class CompanyCrud {
     }
 
 
+    public void insertCompany(Company company) {
+
+    }
 }

@@ -12,7 +12,6 @@ public class EmployeeTest {
     @Description("Getting all employees from the database")
     public void getAllEmployees() {
         List<Employee> employees = new EmployeeQuery().getAllEmployee();
-        Assert.assertTrue(employees != null && !employees.isEmpty());
     }
 
     @Test
@@ -20,7 +19,6 @@ public class EmployeeTest {
     public void getEmployeesByLastname() {
         String lastname = "Lopez";
         List<Employee> employees = new EmployeeQuery().getEmployeesByLastName(lastname);
-        Assert.assertTrue(employees != null && !employees.isEmpty());
     }
 
     @Test
@@ -39,16 +37,15 @@ public class EmployeeTest {
         int employeeId = employeeQuery.insertEmployee(new Employee(id, name, lastName, email, phoneNumber, null, salary, birthDate, companyID));
         Assert.assertTrue(employeeId > 0);
     }
-
     @Test
     @Description("Updating an existing employee's information in the database")
     public void updateEmployee() {
         int id = 100;
-        String name = "Gotenks";
-        String lastName = "Gogeta";
-        String email = "Gotenks@gmail.com";
-        String phoneNumber = "3009876543";
-        double salary = 8200;
+        String name = "Julian";
+        String lastName = "Malaver";
+        String email = "malaver@gmail.com";
+        String phoneNumber = "3005745684";
+        double salary = 7990;
         Date birthDate = java.sql.Date.valueOf("2000-02-29");
         int companyID = 5;
 

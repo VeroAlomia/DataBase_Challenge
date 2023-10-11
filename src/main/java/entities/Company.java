@@ -3,20 +3,6 @@ package entities;
 import jakarta.persistence.*;
 
 @Entity
-<<<<<<< HEAD
-@Table(name = "companies")
-public class Company {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id_company", nullable = false)
-    private int id;
-
-    @Column(name = "name", nullable = false, length = 45)
-    private String name;
-
-    @Column(name = "phone_number", nullable = false, length = 45)
-=======
 @Table(name = "Company")
 public class Company {
 
@@ -28,7 +14,6 @@ public class Company {
     private String name;
 
     @Column(name = "phoneNumber", nullable = false, length = 45)
->>>>>>> cd8663f (Name of variables)
     private String phoneNumber;
 
     @Column(name = "email", nullable = false, length = 45)
