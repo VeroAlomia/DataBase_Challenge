@@ -30,11 +30,11 @@ public class CompanyTest {
     @Test
     @Description("Inserting a new company")
     public void insertNewCompany() {
-        int id = 6;
-        String name = "PriceSmart";
-        String email = "carulla@carulla.com";
-        String address = "Carrera 10 #20-30";
-        String phone = "987654321";
+        int id = 8;
+        String name = "Isimo";
+        String email = "isimo@isimo.com";
+        String address = "Carrera 11 #20-30";
+        String phone = "9876543213";
 
         Company company = new Company(id, name, email, address, phone);
         System.out.println("Company Id: " + company.getId());
